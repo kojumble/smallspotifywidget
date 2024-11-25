@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+    background-color: #181818;
+}
+
+body {
+    transform-style: preserve-3d;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%; 
+    height: 100%; 
+}
+
+.container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+}
+
+.thumbnailbounds {
+    position: relative;
+    width: 156px;
+    height: 156px;
+    scale: 200%
+}
+
+.thumbrot {
+    z-index: 2;
+    position: relative;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+    border-radius: 12px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.17) 0px 0px 0px);
+    /* transition: scale .3s ease-out, filter .4s, transform .1s ease-out; */
+    transition: scale .3s ease-out, filter .4s, transform linear;
+}
+
+.thumbnail {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 12px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.15) 2px 2px 1px);
+    /* transition: transform .2s ease-out;  */
+    transition: transform linear; 
+    height: inherit; 
+    width: inherit;
+}

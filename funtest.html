@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boxes.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="thumbnailbounds" id="thumbnailbounds">
+            <div class="thumbrot" id="thumbrot">
+                <image id="red" class="thumbnail" src="./media/1.png"></image>
+                <image id="orange" class="thumbnail" src="./media/2.png"></image>
+                <image id="yellow" class="thumbnail" src="./media/3.png"></image>
+                <image id="green" class="thumbnail" src="./media/4.png"></image>
+                <image id="blue" class="thumbnail" src="./media/5.png"></image>
+                <div id="bg" class="thumbnail" style="background-color: rgb(255, 255, 255);"></div>
+            </div>
+        </div>
+        <div style="position: fixed;right: 0px;bottom: 0px;background-color: white;width: 300px;height: 50px; padding: 10px;">
+            <span style="text-decoration: underline;">Flip Debug</span> <br>
+            <span>X:<span id="flipxtext">false</span></span> <br>
+            <span>Y:<span id="flipytext">false</span></span>
+            <span style="display: flex; position: absolute; top: 10px; right: 10px;">mode: <span id="modetext">onesided</span></span>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./src/3dmousefollow boxes.js" type="module"></script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Spotify Profile</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fontlist.css">
+
+    <script src="src/spotifyconnect.js" type="module"></script>
+    <script src="src/fastaveragecolor.js"></script>
+    <script src="src/3dmousefollow.js" type="module"></script>
+</head>
+    <body>
+        <div class="modulecontainer">
+            <div id="whatImListeningTo" class="whatImListeningTo">
+                <div class="spotifyContainer">
+                    <div class="thumbnailbounds" id="thumbnailbounds">
+                        <div class="thumbrot" id="thumbrot">
+                            <image class="thumbnail" id="thumbnail"></image>
+                            <div class="thumbnailglint" id="thumbnailglint"></div>
+                        </div>
+                        <div class="thumbnailshadow" id="thumbnailshadow"></div>
+                        <div class="thumbnailBG" id="thumbnailBG" ></div>
+                    </div>
+                    <div class="songData">
+                        <span><a class="songname" id="songname" target="_blank">Song Name</a> <hr id="nameline" style="border-color:black;border:solid;border-width: 1px;margin-top:4px;margin-bottom:4px;opacity:50%;"></span>
+                        <div class="dataContainer">
+                            <span class="subdataContainer">album - <a style="padding-left: 4px;" class="subdatadata" id="albumname" target="_blank"></a></span>
+                            <span class="subdataContainer"><span id="artistPlural">artist -</span><span style="padding-left: 4px;" id="artistname"></span></span>
+                        </div>
+                        <div class="songtime" id="songtime">
+                            <span class="timestamp"><a id="timestamp">0</a> / <a id="maxtime">0</a></span></span>
+                            <span id="progress" class="progress" style="width: 0%;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="queueContainer">
+                    <span>Previous: <a class="queueLinks" id="prevsong" target="_blank"></a><span style="font-style: normal;font-weight: 200;"> | </span><a class="queueLinks" id="prevartist" target="_blank"></a></span>
+                    <span>Next: <a class="queueLinks" id="nextsong" target="_blank"></a><span style="font-style: normal;font-weight: 200;"> | </span><a class="queueLinks" id="nextartist" target="_blank"></a></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
