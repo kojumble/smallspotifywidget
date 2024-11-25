@@ -1,2 +1,2 @@
-# _spotifytest
- reads my spotify data and put it on the web
+# Small Spotify Widget
+this is just a thing i made for fun as a starter project, its like my second javascript thing ever
