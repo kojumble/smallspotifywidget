@@ -2,7 +2,7 @@ import clamp from "clamp";
 
 const movemultiple = 5;
 const shadowmultiple = 8;
-const opacitymultiple = 3;
+// const opacitymultiple = 3;
 
 const songthumbrot = document.getElementById("thumbrot");
 const songthumbbounds = document.getElementById("thumbnailbounds");
@@ -23,8 +23,9 @@ function transformElement(x, y) {
     songthumbshadow.style = `transform: rotateX(${shdcalcX}deg) rotateY(${shdcalcY}deg) translate(9px, 9px);`;
 
     // translate the background to slide in when the mouse is near the top left
-    songthumbglint.style.backgroundPositionX = clamp( ((-155 + ((x - glintbox.x - glintbox.width)) * -1)) , -135, 0)  + `px`;
-    songthumbglint.style.backgroundPositionY = clamp( ((-155 + ((y - glintbox.y - glintbox.height)) * -1)), -135, 0 )  + `px`;
+    // and clamp it so that it doesnt slide off
+    songthumbglint.style.backgroundPositionX = clamp(((-155 + ((x - glintbox.x - glintbox.width)) * -1)) , -135, 0)  + `px`;
+    songthumbglint.style.backgroundPositionY = clamp(((-155 + ((y - glintbox.y - glintbox.height)) * -1)), -135, 0 )  + `px`;
 }
 
 // set the glints opacity by how close to the top left you are
